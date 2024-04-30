@@ -1,0 +1,20 @@
+.rounded-lg {
+    border-radius: 1rem;
+}
+
+.bg-blue-500 {
+    background-color: #007bff;
+}
+.border-blue-500 {
+    border-color: #007bff;
+}
+.text-white {
+    color: #fff; /* text color for the button */
+}
+
+.bg-blue-600:hover {
+    background-color: #0069d9;
+}
+.border-blue-600:hover {
+    border-color: #0062cc;
+}

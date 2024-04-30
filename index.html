@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .center-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body class="bg-blue-300">
+    <div class="center-container">
+        <div class="bg-purple-400 shadow rounded-tl-full rounded-br-full p-6">
+            <h1 class="text-center text-white text-2xl font-semibold mb-4">BMI Calculator</h1>
+            <form>
+                <div class="mb-4">
+                    <label for="weight" class="block text-gray-700 font-bold mb-2">Enter Weight:</label>
+                    <select id="weight-unit" class="form-select mt-1 block w-full rounded-md border-gray-300">
+                        <option value="kg">Kilograms (kg)</option>
+                        <option value="lb">Pounds (lb)</option>
+                    </select>
+                    <input
+                        type="number"
+                        class="form-input mt-1 block w-full rounded-md border-gray-300"
+                        id="weight"
+                        placeholder=" Enter Weight"
+                    />
+                </div>
+                <div class="mb-4">
+                    <label for="height" class="block text-gray-700 font-bold mb-2">Enter Height:</label>
+                    <select id="height-unit" class="form-select mt-1 block w-full rounded-md border-gray-300">
+                        <option value="cm">Centimeters (cm)</option>
+                        <option value="in">Inches (in)</option>
+                    </select>
+                    <input
+                        type="number"
+                class="form-input mt-1 block w-full rounded-md border-gray-300"
+                        id="height"
+                        placeholder=" Enter Height"
+                    />
+                </div>
+                <button
+                    type="button"
+                    class="w-full bg-indigo-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg"
+                    onclick="calculateBMI()"
+                >
+                    Calculate
+                </button>
+            </form>
+            <div id="result" class="mt-4"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
